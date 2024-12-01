@@ -20,6 +20,7 @@ const AppContent = ({ setDisplaySidebar}: { setDisplaySidebar: React.Dispatch<Re
     <Content onClick={() => setDisplaySidebar(false)} role='button'>
         <Suspense fallback={<div className="children-line-loader"><Loading /></div>}>
             <Routes>
+                <Route key='slash' path='/' element={<MainComponent />} />
                 <Route key='dashboard' path='/dashboard' element={<MainComponent />} />
             </Routes>
         </Suspense>
