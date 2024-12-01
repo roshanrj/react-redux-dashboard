@@ -70,14 +70,14 @@ type appDrawerProp = {
 
 const SideDrawer: React.FC<appDrawerProp> = ({ displaySidebar, setDisplaySidebar }) => (
     <SideBar visible={displaySidebar}>
-        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/react-redux-dashboard/">Dashboard</Link>
         <a href="javascript:void(0)" className="closebtn" onClick={() => setDisplaySidebar?.(false)}>&times;</a>
     </SideBar>
 );
 
 
 const MobileDrawer:React.FC<appDrawerProp> = ({ displaySidebar }) => (<MobileBar visible={displaySidebar}>
-    <Link to="/dashboard">Dashboard</Link>
+    <Link to="/react-redux-dashboard/">Dashboard</Link>
 </MobileBar>);
 
 const AppSidebar:React.FC<appDrawerProp> = ({ displaySidebar, setDisplaySidebar }) => {
